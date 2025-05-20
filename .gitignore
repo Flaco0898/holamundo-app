@@ -1,0 +1,14 @@
+.terraform/
+*.zip
+*.exe
+*.tar.gz
+*.pem
+*.ppk
+*.pyc
+*.tfstate
+*.tfstate.backup
+*.tfvars
+*.log
+*.pem
+__pycache__/
+.env
