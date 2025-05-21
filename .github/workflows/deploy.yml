@@ -48,4 +48,5 @@ jobs:
             aws ecr get-login-password --region us-east-2 | docker login --username AWS --password-stdin 682033471159.dkr.ecr.us-east-2.amazonaws.com
             docker stop holamundo || true
             docker rm holamundo || true
+            docker image prune -af || true
             docker run -d --name holamundo -p 8080:80 682033471159.dkr.ecr.us-east-2.amazonaws.com/holamundo-app:latest
